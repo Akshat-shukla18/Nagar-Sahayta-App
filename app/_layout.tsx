@@ -1,29 +1,39 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
+import { Stack } from "expo-router";
+import './global.css';
+import Navbar from './components/Navbar';
+import { View, SafeAreaView, Text } from "react-native";
+import { AuthProvider, useAuth } from './contexts/AuthContext';
+import { LanguageProvider, useLanguage } from './contexts/LanguageContext';
 
-import { useColorScheme } from '@/hooks/useColorScheme';
 
-export default function RootLayout() {
-  const colorScheme = useColorScheme();
-  const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-  });
+function LayoutContent() {
+  const { user, loading } = useAuth();
+  const { currentLanguage } = useLanguage();
 
-  if (!loaded) {
-    // Async font loading only occurs in development.
-    return null;
+  if (loading) {
+    return (
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <Text>Loading...</Text>
+      </View>
+    );
   }
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <View style={{ flex: 1 }}>
+      {user && <Navbar />}
+      <SafeAreaView style={{ flex: 1 }}>
+        <Stack key={currentLanguage} screenOptions={{ headerShown: false }} />
+      </SafeAreaView>
+    </View>
+  );
+}
+
+export default function RootLayout() {
+  return (
+    <LanguageProvider>
+      <AuthProvider>
+        <LayoutContent />
+      </AuthProvider>
+    </LanguageProvider>
   );
 }
