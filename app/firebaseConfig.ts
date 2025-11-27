@@ -3,13 +3,13 @@ import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDzP0AW62JmCgOMCCLwxfLi6tTdgoS_Uc0",
-  authDomain: "clean-city-25.firebaseapp.com",
-  projectId: "clean-city-25",
-  storageBucket: "clean-city-25.firebasestorage.app",
-  messagingSenderId: "577733257631",
-  appId: "1:577733257631:web:742c0a5be09bb5d07db5aa",
-  measurementId: "G-XWC31BMP90"
+  apiKey: "Use_your_Assets",
+  authDomain: "Use_your_Assets",
+  projectId: "Use_your_Assets",
+  storageBucket: "Use_your_Assets",
+  messagingSenderId: "Use_your_Assets1",
+  appId: "Use_your_Assets",
+  measurementId: "Use_your_Assets"
 };
 
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
