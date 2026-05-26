@@ -1,7 +1,5 @@
-- [x] Add "sendingReport" key to app/locales/en.json under "report" section
-- [x] Add isSubmitting state to app/report.tsx
-- [x] Update onSubmit function in app/report.tsx to set isSubmitting true at start and false after submission
-- [x] Add conditional UI in app/report.tsx to show ActivityIndicator and "sending report" text when isSubmitting is true, replacing the submit button
-- [ ] Test the report submission to verify the loading indicator appears during submission and disappears after alert
-- [x] Add checkbox for "Terms and Conditions" during signup in app/login.tsx
-- [x] Prevent signup if checkbox is not checked
+- [ ] Update Expo SDK version in package.json from sdk53 to sdk54
+- [ ] Fix package.json syntax (ensure valid JSON after edit)
+- [ ] Install dependencies (npm install)
+- [ ] Verify build/start works (expo start / expo run:android)
+
