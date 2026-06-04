@@ -1,6 +1,9 @@
-# 📱 Nagar Sahayta
+# 📱 Nagar Sahayta App
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/9f7ae0cf-54e1-4f23-b7a0-c1c5d4b75ba0" />
+
 
 ## Connecting Citizens Directly with Government Workers
+
 
 Nagar Sahayta is a mobile application built using **React Native (Expo)** that enables citizens to report civic issues directly to the responsible government departments and track their resolution from start to finish.
 
@@ -33,6 +36,8 @@ Nagar Sahayta solves this problem by creating a direct communication channel bet
 ### Report Issues
 
 Users can submit complaints by:
+<img width="686" height="676" alt="Screenshot 2025-08-28 232948" src="https://github.com/user-attachments/assets/a18dd6c3-4165-49c3-9af7-9ae2737842c5" />
+
 
 * Uploading images
 * Adding issue descriptions
@@ -42,6 +47,9 @@ Users can submit complaints by:
 ### Complaint Tracking
 
 Track complaint status in real-time:
+
+<img width="870" height="750" alt="Screenshot 2025-08-28 233953" src="https://github.com/user-attachments/assets/cf5fa0fb-4bbc-47e4-b9cd-cffa2a153afb" />
+
 
 * Submitted
 * Verified
