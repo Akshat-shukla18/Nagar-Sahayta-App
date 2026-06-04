@@ -1,47 +1,237 @@
-# Welcome to your Expo app 👋
+# 📱 Nagar Sahayta
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
-1. Install dependencies
+## Connecting Citizens Directly with Government Workers
 
-   ```bash
-   npm install
-   ```
+Nagar Sahayta is a mobile application built using **React Native (Expo)** that enables citizens to report civic issues directly to the responsible government departments and track their resolution from start to finish.
 
-2. Start the app
+The platform ensures complete transparency by allowing users to monitor every stage of their complaint, receive progress updates, and view proof of completion submitted by government workers.
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+# 🎯 Problem Statement
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Citizens often face difficulties reporting public issues such as:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+* Damaged roads
+* Water leakage
+* Electricity outages
+* Broken street lights
+* Garbage accumulation
+* Sewage problems
+* Public infrastructure damage
 
-## Get a fresh project
+Traditional complaint systems lack transparency, making it difficult for citizens to know whether their issue is being addressed.
 
-When you're ready, run:
+Nagar Sahayta solves this problem by creating a direct communication channel between citizens and government workers.
 
-```bash
-npm run reset-project
+---
+
+# 🚀 Key Features
+
+## 👥 Citizen Module
+
+### Report Issues
+
+Users can submit complaints by:
+
+* Uploading images
+* Adding issue descriptions
+* Sharing location details
+* Selecting issue categories
+
+### Complaint Tracking
+
+Track complaint status in real-time:
+
+* Submitted
+* Verified
+* Assigned
+* In Progress
+* Resolved
+
+### Digital Report Generation
+
+After submitting a complaint, a digital report is automatically generated containing:
+
+* Complaint ID
+* Submission Date
+* Category
+* Current Status
+* Assigned Department
+
+### Progress Updates
+
+Citizens receive updates whenever:
+
+* Complaint is accepted
+* Worker is assigned
+* Work begins
+* Resolution is completed
+
+---
+
+## 👷 Government Worker Module
+
+### View Assigned Complaints
+
+Workers can access issues assigned to their department.
+
+### Update Progress
+
+Workers can:
+
+* Add work notes
+* Change status
+* Upload progress photos
+
+### Resolution Proof
+
+Once work is completed, workers upload:
+
+* Final completion image
+* Resolution description
+* Completion date
+
+This ensures accountability and transparency.
+
+---
+
+## 📊 Transparency System
+
+Every complaint maintains a timeline:
+
+```text
+Complaint Submitted
+        ↓
+Department Verification
+        ↓
+Worker Assigned
+        ↓
+Work In Progress
+        ↓
+Progress Updates
+        ↓
+Work Completed
+        ↓
+Completion Photo Uploaded
+        ↓
+Citizen Verification
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Users can view the complete history of actions taken on their issue.
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+# 🛠 Tech Stack
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Mobile App
 
-## Join the community
+* React Native
+* Expo
 
-Join our community of developers creating universal apps.
+## Backend
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+* Node.js
+* Express.js
+
+## Database
+
+* MongoDB
+
+## Authentication
+
+* JWT Authentication
+
+## File Storage
+
+* Cloudinary / Firebase Storage
+
+## Notifications
+
+* Push Notifications
+
+---
+
+# 📱 Screens
+
+### Citizen Side
+
+* Login / Register
+* Home Dashboard
+* Create Complaint
+* Complaint Tracking
+* Generated Reports
+* Notifications
+* Profile
+
+### Worker Side
+
+* Login
+* Assigned Tasks
+* Update Progress
+* Upload Completion Photos
+* Resolution Dashboard
+
+---
+
+# 🌟 Unique Features
+
+✅ Direct citizen-to-worker communication
+
+✅ Real-time complaint tracking
+
+✅ Digital complaint reports
+
+✅ Progress photo updates
+
+✅ Completion proof system
+
+✅ Department-wise complaint management
+
+✅ Increased government accountability
+
+✅ Improved citizen trust
+
+---
+
+# 🔮 Future Enhancements
+
+* AI-powered issue categorization
+* Automatic department assignment
+* GPS-based complaint mapping
+* Live chat between citizen and worker
+* Multi-language support
+* Analytics Dashboard for Government Officials
+* AI-generated priority ranking
+
+---
+
+# ⚙️ Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/yourusername/nagar-sahayta.git
+```
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+## Start Expo Server
+
+```bash
+npx expo start
+```
+
+---
+
+# 🤝 Impact
+
+Nagar Sahayta empowers citizens by making grievance redressal transparent, trackable, and accountable. By providing direct visibility into the resolution process, the platform strengthens trust between citizens and government departments while improving the efficiency of public service delivery.
+
+---
+
+## Developed with ❤️ for Smart Cities and Digital Governance
